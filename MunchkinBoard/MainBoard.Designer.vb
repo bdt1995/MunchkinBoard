@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class MunchkinBoard
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,10 +23,10 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.P1Add = New System.Windows.Forms.Button()
-        Me.P1Minus = New System.Windows.Forms.Button()
-        Me.P1Level = New System.Windows.Forms.Label()
         Me.P1Reset = New System.Windows.Forms.Button()
+        Me.P1Level = New System.Windows.Forms.Label()
+        Me.P1Minus = New System.Windows.Forms.Button()
+        Me.P1Add = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.P2Reset = New System.Windows.Forms.Button()
         Me.P2Level = New System.Windows.Forms.Label()
@@ -65,23 +65,14 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Player 1"
         '
-        'P1Add
+        'P1Reset
         '
-        Me.P1Add.Location = New System.Drawing.Point(6, 144)
-        Me.P1Add.Name = "P1Add"
-        Me.P1Add.Size = New System.Drawing.Size(64, 68)
-        Me.P1Add.TabIndex = 0
-        Me.P1Add.Text = "+"
-        Me.P1Add.UseVisualStyleBackColor = True
-        '
-        'P1Minus
-        '
-        Me.P1Minus.Location = New System.Drawing.Point(181, 144)
-        Me.P1Minus.Name = "P1Minus"
-        Me.P1Minus.Size = New System.Drawing.Size(64, 68)
-        Me.P1Minus.TabIndex = 1
-        Me.P1Minus.Text = "-"
-        Me.P1Minus.UseVisualStyleBackColor = True
+        Me.P1Reset.Location = New System.Drawing.Point(90, 167)
+        Me.P1Reset.Name = "P1Reset"
+        Me.P1Reset.Size = New System.Drawing.Size(75, 23)
+        Me.P1Reset.TabIndex = 3
+        Me.P1Reset.Text = "reset"
+        Me.P1Reset.UseVisualStyleBackColor = True
         '
         'P1Level
         '
@@ -92,14 +83,23 @@ Partial Class Form1
         Me.P1Level.TabIndex = 2
         Me.P1Level.Text = "Level: 1"
         '
-        'P1Reset
+        'P1Minus
         '
-        Me.P1Reset.Location = New System.Drawing.Point(90, 167)
-        Me.P1Reset.Name = "P1Reset"
-        Me.P1Reset.Size = New System.Drawing.Size(75, 23)
-        Me.P1Reset.TabIndex = 3
-        Me.P1Reset.Text = "reset"
-        Me.P1Reset.UseVisualStyleBackColor = True
+        Me.P1Minus.Location = New System.Drawing.Point(181, 144)
+        Me.P1Minus.Name = "P1Minus"
+        Me.P1Minus.Size = New System.Drawing.Size(64, 68)
+        Me.P1Minus.TabIndex = 1
+        Me.P1Minus.Text = "-"
+        Me.P1Minus.UseVisualStyleBackColor = True
+        '
+        'P1Add
+        '
+        Me.P1Add.Location = New System.Drawing.Point(6, 144)
+        Me.P1Add.Name = "P1Add"
+        Me.P1Add.Size = New System.Drawing.Size(64, 68)
+        Me.P1Add.TabIndex = 0
+        Me.P1Add.Text = "+"
+        Me.P1Add.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -270,7 +270,7 @@ Partial Class Form1
         Me.TotalResetToolStripMenuItem.Size = New System.Drawing.Size(175, 24)
         Me.TotalResetToolStripMenuItem.Text = "Total Reset"
         '
-        'Form1
+        'MunchkinBoard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -280,8 +280,8 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "MunchkinBoard"
+        Me.Text = "Munchkin Board"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

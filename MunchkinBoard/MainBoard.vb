@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class MunchkinBoard
     Dim P1Lev, P2Lev, P3Lev, P4Lev As Integer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
